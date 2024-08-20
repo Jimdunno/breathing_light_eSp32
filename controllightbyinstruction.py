@@ -2,7 +2,7 @@ import time
 import network
 import machine
 '''
-led2 = PWM(Pin(2))
+led2 = machine.PWM(machine.Pin(2))
 led2.freq(1000)
 
 while True: # Control the repetition of the light pulse
