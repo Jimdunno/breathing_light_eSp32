@@ -1,7 +1,8 @@
 import time
 import network
 import machine
-'''
+
+# Set the Pin to the LED light
 led2 = machine.PWM(machine.Pin(2))
 led2.freq(1000)
 
@@ -16,7 +17,7 @@ while True: # Control the repetition of the light pulse
     for i in range(1023, -1, -1):
         led2.duty(i)
         time.sleep_ms(2)
-'''
+
 def do_connect():
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
